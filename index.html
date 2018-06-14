@@ -7,8 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Galindo" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
     <title>Kertész | Főoldal</title>
   </head>
@@ -20,7 +18,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="index.html">Blog</a>
             </li>
             <li class="nav-item">
@@ -53,29 +51,56 @@
     </div>
 
     <main>
-        <section class="container bg-light rounded">
-            <div class="row pt-2">
+        <section class="container rounded">
+            <div class="row pt-2 yellow-line-bg">
                 <div class="col-md-4 col-12 text-center">
-                    <img src="img/tavaszikert1.jpg" class="img-fluid shadow p-3 mb-5 bg-white rounded" alt="kert" width="350">
+                    <img src="img/tavaszikert1.jpg" class="img-fluid shadow p-2 mb-5 rounded" alt="kert" width="350">
                 </div>
                 <div class="col-md-8 col-12 text-left">
                     <h4>Uborka palánták kiültetése</h4>
+                    <div class="dropdown-divider"></div>
+                    <p><small>2018.06.12.</small></p>
                     <p class="blog-text">
                         A mai napon egy kedves ismerősömtől kaptam pár tő uborkapalántát, így úgy döntöttem, hogy
                         a sajátjaimmal együtt elültetem őket (3 db-ot hagytam csak meg az esetleges pótlásra).
                         6 db palántát (3 fajta) ültettem a magaságyba, amire felszereltem a támrendszert is uborkahálóval,
                         8 db palántának pedig a kerítés mellett találtam helyet, remélem nem fogja zavarni a szomszédot.
                         A talajt előtte pétisóval szórtam be, és jó mélyen felkapáltam.
-                    </p>
-                    <div>
-                        2018.06.12.
+                    </p>  
+                    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn orange-line-bg ml-3" data-toggle="modal" data-target="#UborkaModalCenter">
+                    Korábbi tapasztalat
+                    </button>
+                
+                    <!-- Modal -->
+                    <div class="modal fade" id="UborkaModalCenter" tabindex="-1" role="dialog" aria-labelledby="UborkaModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="UborkaModalCenterTitle">Uborka esete</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="blog-text">
+                                        Tavaly kétfajta uborkát ültettem, egy saláta és egy csemege típusút. Sajnos minden egyes csemege uborka olyan keserűre
+                                        sikeredett, hogy rögtön ment a komposztba. Valószínű rossz fajtát fogtam ki, vagy az öntözés nem volt neki elég egyenletes.
+                                        Idén már csak saláta uborkával próbálkozom, plusz amit kaptam pár tövet (nem derült ki milyen fajták lehetnek).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
-            <div class="dropdown-divider"></div>
-            <div class="row pt-2">
-                <div class="col-md-8 col-12 text-left">
+            <div class="row pt-2 yellow-line-bg">
+                <div class="col-md-8 col-12 text-left py-2">
                     <h4>Elindult az oldalam</h4>
+                    <div class="dropdown-divider"></div>
+                    <p><small>2018.06.12.</small></p>
                     <p class="blog-text">
                         Üdvözlök minden látogatót a blogomon! Ezen az oldalon megosztom tapasztalataimat, 
                         próbálkozásaimat a kertészkedéssel kapcsolatban, amit igyekszem majd sok képpel illusztrálni.
@@ -83,15 +108,37 @@
                     <p class="blog-text">
                         Az oldal egyben a Bootstrap HTML/CSS keretrendszerrel való megismerkedésem terméke kezdő statikus weboldal készítőként.
                     </p>
-                    <div>
-                        2018.06.12.
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn orange-line-bg ml-3" data-toggle="modal" data-target="#BootStrapModalCenter">
+                    Részletek
+                    </button>
+                
+                    <!-- Modal -->
+                    <div class="modal fade" id="BootStrapModalCenter" tabindex="-1" role="dialog" aria-labelledby="BootStrapModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="BootStrapModalCenterTitle">BootStrap</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="blog-text">
+                                        A Bootstrap használatával a NetAcademia.hu oldalon közétett BootStap 4 tanfolyam keretében ismerkedtem meg.
+                                        Ugyan rendelkezem egy kis HTML és CSS tudással, de ez minden, JavaScript-ben abszolút nem vagyok járatos, ennek
+                                        ellenére nagyobb erőfeszítés nélkül hoztam létre ezt a weboldalt.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 text-center">
-                    <img src="img/tavaszikert2.jpg" class="img-fluid shadow p-3 mb-5 bg-white rounded" alt="kert" width="350">
+                    <img src="img/tavaszikert2.jpg" class="img-fluid shadow p-2 mb-5 rounded" alt="kert" width="350">
                 </div>
             </div>
-            <div class="dropdown-divider"></div>
         </section>
     </main>
 
