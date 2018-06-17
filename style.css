@@ -111,3 +111,7 @@ body {
 ul{
     list-style-image: url("img/carrot-24.png");
 }
+
+.row{
+    padding-bottom: 1rem;
+}
