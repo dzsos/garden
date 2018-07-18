@@ -115,3 +115,7 @@ ul{
 .row{
     padding-bottom: 1rem;
 }
+
+h6{
+    font-weight: bold;
+}
